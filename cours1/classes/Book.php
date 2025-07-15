@@ -17,7 +17,7 @@ class Book {
 
     public function setTitle(string $title):void {
         // si le titre est supérieur ou égal à 50, on le set
-        if(strlen($title) >= 50)
+        if(strlen($title) <= 50)
             $this->title = $title;
     }
 
