@@ -16,3 +16,4 @@ $ptoleme->load($vin);
 $ptoleme->listCargo();
 $ptoleme->load($eau);
 $ptoleme->listCargo();
+//$ptoleme->load("Toto");
