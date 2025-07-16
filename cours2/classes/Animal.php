@@ -2,7 +2,7 @@
 class Animal
 {
     protected string $name;
-    protected int $weight;
+    private int $weight;
     protected int $age;
 
     public function __construct(string $name, int $weight, int $age)
@@ -20,5 +20,16 @@ class Animal
     public function getName(): string
     {
         return $this->name;
+    }
+
+    public function setWeight(int $weight):void {
+        if($weight > 0){
+            $this->weight = $weight;
+        }
+    }
+
+    public function getWeight(): int
+    {
+        return $this->weight;
     }
 }
