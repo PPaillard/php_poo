@@ -20,6 +20,7 @@ use App\Model\Dog;
 use App\Model\Cat;
 use App\Model\Refuge;
 use App\Model\Animal;
+use App\Utils\AnimalFormatter;
 
 $medor = new Dog("Médor", 90, 10);
 $uricane = new Cat("Uricane", 3, 2);
@@ -31,3 +32,5 @@ $refuge->makeAllSounds();
 
 echo "<br>";
 echo "Nombre d'animaux ayant été créés : " . Animal::getCount();
+echo "<br>";
+AnimalFormatter::describe($uricane);
