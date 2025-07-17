@@ -1,7 +1,9 @@
 <?php
-class PhysicalProduct extends Product {
+class PhysicalProduct extends Product implements DeliveryInterface
+{
 
-    public function getDeliveryMethod():string {
+    public function getDeliveryMethod(): string
+    {
         return "Expedition par colis";
     }
 

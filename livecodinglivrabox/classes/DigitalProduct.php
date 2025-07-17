@@ -1,7 +1,9 @@
 <?php
-class DigitalProduct extends Product{
-    
-    public function getDeliveryMethod():string {
+class DigitalProduct extends Product implements DeliveryInterface
+{
+
+    public function getDeliveryMethod(): string
+    {
         return "Lien de telechargement : http://blabla.fr";
     }
 
