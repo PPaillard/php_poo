@@ -9,13 +9,15 @@ class Animal
     protected string $name;
     private int $weight;
     protected int $age;
+    protected bool $isAdopted;
 
-    public function __construct(string $name, int $weight, int $age)
+    public function __construct(string $name, int $weight, int $age, bool $isAdopted = false)
     {
         self::$count++;
         $this->name     = $name;
         $this->weight   = $weight;
         $this->age      = $age;
+        $this->isAdopted = $isAdopted;
     }
 
     public function makeSound(): string
@@ -43,5 +45,15 @@ class Animal
     public function getWeight(): int
     {
         return $this->weight;
+    }
+
+    public function getIsAdopted(): bool
+    {
+        return $this->isAdopted;
+    }
+
+    public function setIsAdopted(bool $isAdopted): void
+    {
+        $this->isAdopted = $isAdopted;
     }
 }
