@@ -20,7 +20,7 @@ abstract class Animal
         $this->isAdopted = $isAdopted;
     }
 
-    public abstract function makeSound(): string;
+    abstract public function makeSound(): string;
 
     public static function getCount(): int
     {
