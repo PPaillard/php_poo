@@ -4,8 +4,6 @@ namespace App\Model;
 
 use App\Interface\IdentifiableInterface;
 
-//require_once "Animal.php";
-
 final class Refuge
 {
     private array $animals = [];
