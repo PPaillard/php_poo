@@ -14,12 +14,12 @@ final class Adopter
 
     public function adoptAnimal(Animal $animal): void
     {
-        // S'il a déjà été adopté, on sort
-        if ($animal->getIsAdopted()) {
-            return;
-        }
-        // Sinon, on l'ajoute.
+        // on l'ajoute.
         $this->adoptedAnimals[] = $animal;
-        $animal->setIsAdopted(true);
+    }
+
+    public function getName(): string
+    {
+        return $this->name;
     }
 }

@@ -53,4 +53,9 @@ abstract class Animal
     {
         $this->isAdopted = $isAdopted;
     }
+
+    public function getAge(): int
+    {
+        return $this->age;
+    }
 }
